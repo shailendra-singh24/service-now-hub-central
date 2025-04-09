@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,11 +62,15 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// ServiceNow inspired colors
+				bharatnow: {
+					orange: '#FF8A3C',
+					green: '#62C554',
+					light: '#ecf0f1'
+				},
 				servicenow: {
-					blue: '#0b76de',
-					green: '#62c554',
-					teal: '#00a9e0',
+					blue: '#FF8A3C',
+					green: '#62C554',
+					teal: '#FF8A3C',
 					purple: '#7f43d6',
 					dark: '#2c3e50',
 					light: '#ecf0f1'

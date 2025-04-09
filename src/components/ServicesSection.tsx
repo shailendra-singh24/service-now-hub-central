@@ -9,28 +9,28 @@ const ServicesSection = () => {
       description: "Streamline IT operations with our ITSM implementation services. Automate workflows, manage incidents, and enhance service delivery.",
       icon: <Database className="w-8 h-8 text-white" />,
       linkUrl: "/services/itsm",
-      color: "bg-servicenow-blue"
+      color: "bg-bharatnow-orange"
     },
     {
       title: "HR Service Delivery",
       description: "Transform HR operations with ServiceNow. Simplify case management, employee onboarding, and HR service delivery.",
       icon: <UserSquare className="w-8 h-8 text-white" />,
       linkUrl: "/services/hr",
-      color: "bg-servicenow-purple"
+      color: "bg-bharatnow-green"
     },
     {
       title: "Customer Service Management",
       description: "Elevate customer satisfaction with ServiceNow CSM. Create seamless customer experiences across all touchpoints.",
       icon: <Users className="w-8 h-8 text-white" />,
       linkUrl: "/services/csm",
-      color: "bg-servicenow-green"
+      color: "bg-bharatnow-orange"
     },
     {
       title: "Custom Implementations",
       description: "Tailored ServiceNow solutions designed for your unique business needs. Custom apps, integrations, and workflows.",
       icon: <Cog className="w-8 h-8 text-white" />,
       linkUrl: "/services/custom",
-      color: "bg-servicenow-teal"
+      color: "bg-bharatnow-green"
     }
   ];
 

@@ -14,16 +14,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 210 30% 15%;
 
-    --primary: 210 80% 46%;
+    --primary: 28 100% 61%; /* Orange from logo */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 20% 96%;
+    --secondary: 120 50% 55%; /* Green from logo */
     --secondary-foreground: 210 30% 15%;
 
     --muted: 210 20% 96%;
     --muted-foreground: 215 15% 46%;
 
-    --accent: 190 90% 44%;
+    --accent: 28 100% 61%; /* Orange from logo */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -31,7 +31,7 @@
 
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 210 80% 46%;
+    --ring: 28 100% 61%; /* Orange from logo */
 
     --radius: 0.5rem;
 
@@ -55,16 +55,16 @@
     --popover: 210 30% 15%;
     --popover-foreground: 210 20% 98%;
 
-    --primary: 210 80% 46%;
+    --primary: 28 100% 61%; /* Orange from logo */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 30% 20%;
+    --secondary: 120 50% 55%; /* Green from logo */
     --secondary-foreground: 210 20% 98%;
 
     --muted: 210 30% 20%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 190 90% 44%;
+    --accent: 28 100% 61%; /* Orange from logo */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 63% 31%;
@@ -97,7 +97,7 @@
 
 @layer components {
   .hero-gradient {
-    @apply bg-gradient-to-r from-servicenow-blue via-servicenow-teal to-servicenow-blue bg-size-200 animate-gradient;
+    @apply bg-gradient-to-r from-bharatnow-orange via-bharatnow-green to-bharatnow-orange bg-size-200 animate-gradient;
   }
   
   .card-hover {

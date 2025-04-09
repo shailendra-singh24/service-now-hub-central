@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <div className="bg-gradient-to-r from-servicenow-blue to-servicenow-teal text-white py-20 md:py-32">
+    <div className="bg-gradient-to-r from-bharatnow-orange to-bharatnow-green text-white py-20 md:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center md:text-left md:flex md:items-center md:justify-between">
           <div className="md:w-1/2 md:pr-10 animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-              Transform Your Business with ServiceNow
+              Transform Your Business with BharatNow Solutions
             </h1>
             <p className="text-xl mb-8 text-white/90">
               Expert implementation, customization, and support for ServiceNow ITSM, HR Service Delivery, and CSM platforms.
@@ -17,7 +17,7 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
               <Button 
                 size="lg" 
-                className="bg-white text-servicenow-blue hover:bg-white/90"
+                className="bg-white text-bharatnow-orange hover:bg-white/90"
                 asChild
               >
                 <Link to="/contact">Schedule a Consultation</Link>
