@@ -12,13 +12,13 @@ const Navbar = () => {
   return (
     <nav className="bg-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm border-b">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-between h-20">
           <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-3">
               <img 
                 src="/lovable-uploads/da9743a3-7306-41e0-aaaa-13fcbd60a414.png" 
                 alt="BharatNow Solutions" 
-                className="h-8"
+                className="h-12"
               />
               <span className="sr-only">BharatNow Solutions</span>
             </Link>

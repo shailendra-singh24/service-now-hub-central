@@ -34,7 +34,7 @@ const HeroSection = () => {
           </div>
           <div className="hidden md:block md:w-1/2 animate-slide-up">
             <img 
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
               alt="ServiceNow Platform" 
               className="rounded-lg shadow-2xl"
             />
