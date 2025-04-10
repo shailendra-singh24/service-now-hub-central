@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLogoHovered, setIsLogoHovered] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -14,12 +15,22 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-24">
           <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="flex items-center space-x-3">
-              <img 
-                src="/lovable-uploads/da9743a3-7306-41e0-aaaa-13fcbd60a414.png" 
-                alt="BharatNow Solutions" 
-                className="h-16"
-              />
+            <Link 
+              to="/" 
+              className="flex items-center space-x-3"
+              onMouseEnter={() => setIsLogoHovered(true)}
+              onMouseLeave={() => setIsLogoHovered(false)}
+            >
+              <div className="relative h-16 w-auto transition-all duration-300 ease-in-out transform">
+                <img 
+                  src="/lovable-uploads/295931b9-9151-45af-8dbb-fb26ffdf90ed.png" 
+                  alt="BharatNow Solutions" 
+                  className={`h-16 transition-all duration-300 ${isLogoHovered ? 'scale-110' : 'scale-100'}`}
+                />
+                {isLogoHovered && (
+                  <div className="absolute inset-0 bg-gradient-to-r from-bharatnow-orange/20 to-bharatnow-green/20 rounded-full animate-pulse"></div>
+                )}
+              </div>
               <span className="sr-only">BharatNow Solutions</span>
             </Link>
           </div>
