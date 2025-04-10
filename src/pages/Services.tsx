@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Database, UserSquare, Users, Cog, Settings, Server, Clock, FileText } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const serviceCategories = [
@@ -141,7 +142,7 @@ const Services = () => {
           {serviceCategories.map((category) => (
             <div key={category.id} className="mb-16" id={category.id}>
               <div className="flex items-center mb-8">
-                <div className="mr-4">{category.icon}</div>
+                <div className="mr-4 transition-transform duration-300 hover:scale-110">{category.icon}</div>
                 <div>
                   <h2 className="text-3xl font-bold">{category.title}</h2>
                   <p className="text-muted-foreground text-lg">{category.description}</p>
@@ -150,9 +151,11 @@ const Services = () => {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {category.services.map((service, index) => (
-                  <Card key={index} className="card-hover">
+                  <Card key={index} className="card-hover transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
                     <CardHeader className="flex flex-row items-center gap-4">
-                      {service.icon}
+                      <div className="transition-transform duration-300 hover:scale-110 hover:rotate-6">
+                        {service.icon}
+                      </div>
                       <CardTitle>{service.title}</CardTitle>
                     </CardHeader>
                     <CardContent>
@@ -173,12 +176,12 @@ const Services = () => {
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
                 Contact us today to learn how our ServiceNow solutions can transform your business.
               </p>
-              <a 
-                href="/contact" 
-                className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-servicenow-blue text-white hover:bg-servicenow-blue/90 h-10 px-4 py-2"
+              <Link 
+                to="/contact" 
+                className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-bharatnow-orange text-white hover:bg-bharatnow-orange/90 h-12 px-8 py-3 text-lg shadow-lg"
               >
                 Contact Our Team
-              </a>
+              </Link>
             </div>
           </div>
         </div>

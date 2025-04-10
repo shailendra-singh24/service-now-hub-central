@@ -26,7 +26,7 @@ const Contact = () => {
         {/* Map Section */}
         <div className="h-96 w-full">
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26852.95307266555!2d-117.16714509227246!3d32.71569913812896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%20CA!5e0!3m2!1sen!2sus!4v1682432453799!5m2!1sen!2sus" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14487.066618446282!2d81.8281723!3d25.4356068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39854a0ccba2be15%3A0x7e8a5d7ade6a75c7!2sGangotri%20Nagar%2C%20Mahewa%20East%2C%20Allahabad%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1681718946373!5m2!1sen!2sin" 
             width="100%" 
             height="100%" 
             style={{ border: 0 }} 

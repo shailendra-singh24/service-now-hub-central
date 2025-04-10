@@ -58,7 +58,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium">Our Office</h3>
-                  <p className="text-muted-foreground">1234 Tech Drive, San Diego, CA 92101</p>
+                  <p className="text-muted-foreground">Gangotri Nagar, Mahewa East, Prayagraj</p>
                 </div>
               </div>
               
@@ -70,7 +70,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium">Email</h3>
-                  <p className="text-muted-foreground">info@servicenewhub.com</p>
+                  <p className="text-muted-foreground">info@bharatnowsolutions.com</p>
                 </div>
               </div>
               
@@ -82,14 +82,14 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium">Phone</h3>
-                  <p className="text-muted-foreground">(555) 123-4567</p>
+                  <p className="text-muted-foreground">+917388939531</p>
                 </div>
               </div>
             </div>
           </div>
           
           <div className="lg:w-1/2">
-            <div className="bg-white p-8 rounded-lg shadow-lg">
+            <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
               <h3 className="text-2xl font-bold mb-6">Send us a Message</h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -101,6 +101,7 @@ const ContactSection = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
+                    className="hover:border-bharatnow-orange focus:border-bharatnow-orange transition-colors duration-300"
                   />
                 </div>
                 
@@ -113,6 +114,7 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
+                    className="hover:border-bharatnow-orange focus:border-bharatnow-orange transition-colors duration-300"
                   />
                 </div>
                 
@@ -123,6 +125,7 @@ const ContactSection = () => {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
+                    className="hover:border-bharatnow-orange focus:border-bharatnow-orange transition-colors duration-300"
                   />
                 </div>
                 
@@ -135,10 +138,11 @@ const ContactSection = () => {
                     value={formData.message}
                     onChange={handleChange}
                     required
+                    className="hover:border-bharatnow-orange focus:border-bharatnow-orange transition-colors duration-300"
                   />
                 </div>
                 
-                <Button type="submit" className="w-full bg-servicenow-blue hover:bg-servicenow-blue/90">
+                <Button type="submit" className="w-full bg-bharatnow-orange hover:bg-bharatnow-orange/90 hover:scale-105 transition-all duration-300">
                   Send Message
                 </Button>
               </form>

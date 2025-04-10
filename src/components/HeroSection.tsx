@@ -17,7 +17,7 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
               <Button 
                 size="lg" 
-                className="bg-white text-bharatnow-orange hover:bg-white/90"
+                className="bg-white text-bharatnow-orange hover:bg-white/90 hover:scale-105 transition-all duration-300"
                 asChild
               >
                 <Link to="/contact">Schedule a Consultation</Link>
@@ -25,7 +25,7 @@ const HeroSection = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-white text-white hover:bg-white/10"
+                className="border-white text-white bg-bharatnow-orange hover:bg-bharatnow-orange/90 hover:scale-105 transition-all duration-300 shadow-lg"
                 asChild
               >
                 <Link to="/services">Explore Services</Link>
@@ -36,7 +36,7 @@ const HeroSection = () => {
             <img 
               src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
               alt="ServiceNow Platform" 
-              className="rounded-lg shadow-2xl"
+              className="rounded-lg shadow-2xl hover:shadow-xl hover:scale-105 transition-all duration-500"
             />
           </div>
         </div>
