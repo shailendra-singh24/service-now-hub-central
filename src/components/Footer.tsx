@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import { Image } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -8,7 +9,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and company info */}
           <div className="col-span-1 md:col-span-1">
-            <h2 className="text-xl font-bold mb-4">BharatNow Solutions</h2>
+            <div className="flex items-center gap-2 mb-4">
+              <div className="bg-white p-1 rounded-md hover:scale-110 transition-transform duration-300">
+                <Image className="h-8 w-8 text-bharatnow-orange" />
+              </div>
+              <h2 className="text-xl font-bold">BharatNow Solutions</h2>
+            </div>
             <p className="text-gray-300 mb-4">
               Delivering exceptional ServiceNow solutions to transform your business processes.
             </p>

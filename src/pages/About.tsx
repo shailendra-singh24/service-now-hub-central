@@ -108,50 +108,6 @@ const About = () => {
             </div>
           </div>
         </section>
-        
-        {/* Team Section */}
-        <section className="py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Meet Our Leadership Team</h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Our experienced team brings decades of combined ServiceNow and IT management expertise.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                {
-                  name: "Sarah Johnson",
-                  role: "CEO & Founder",
-                  image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-                  bio: "ServiceNow certified architect with 15+ years of IT service management experience."
-                },
-                {
-                  name: "Michael Chen",
-                  role: "CTO",
-                  image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-                  bio: "Former ServiceNow technical architect with expertise in complex enterprise implementations."
-                },
-                {
-                  name: "David Rodriguez",
-                  role: "VP of Client Success",
-                  image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-                  bio: "Dedicated to ensuring our clients achieve their business goals through ServiceNow."
-                }
-              ].map((member, index) => (
-                <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-                  <img src={member.image} alt={member.name} className="w-full h-64 object-cover" />
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-1">{member.name}</h3>
-                    <p className="text-servicenow-blue mb-3">{member.role}</p>
-                    <p className="text-muted-foreground">{member.bio}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
     </div>
