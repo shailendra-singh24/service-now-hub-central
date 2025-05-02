@@ -44,9 +44,9 @@ const ContactSection = () => {
         }
       };
       
-      // Replace with your actual HubSpot portal ID and form ID
-      const hubspotPortalId = "YOUR_HUBSPOT_PORTAL_ID";
-      const hubspotFormId = "YOUR_HUBSPOT_FORM_ID";
+      // HubSpot portal ID and form ID
+      const hubspotPortalId = "242611690";
+      const hubspotFormId = "2QC8A1BpUTfySxY1lhQuGIA40g0dm";
       
       const response = await fetch(
         `https://api.hsforms.com/submissions/v3/integration/submit/${hubspotPortalId}/${hubspotFormId}`,
