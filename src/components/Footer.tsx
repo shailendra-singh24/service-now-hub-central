@@ -1,4 +1,6 @@
+
 import { Link } from "react-router-dom";
+import { Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -107,7 +109,12 @@ const Footer = () => {
             <address className="not-italic text-gray-300">
               <p>Gangotri Nagar, Mahewa East</p>
               <p>Prayagraj</p>
-              <p className="mt-2">info@bharatnowsolutions.com</p>
+              <p className="mt-2 flex items-center">
+                <Mail className="w-4 h-4 mr-2" />
+                <a href="mailto:info@bharatnowsolutions.com" className="text-gray-300 hover:text-white transition-colors duration-300">
+                  info@bharatnowsolutions.com
+                </a>
+              </p>
               <p>+917388939531</p>
             </address>
           </div>

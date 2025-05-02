@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { Mail } from "lucide-react";
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -72,7 +73,12 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium">Email</h3>
-                  <p className="text-muted-foreground">info@bharatnowsolutions.com</p>
+                  <p className="text-muted-foreground">
+                    <a href="mailto:info@bharatnowsolutions.com" className="hover:text-servicenow-blue transition-colors duration-300 flex items-center">
+                      <Mail className="w-4 h-4 mr-1 inline" />
+                      info@bharatnowsolutions.com
+                    </a>
+                  </p>
                 </div>
               </div>
               
