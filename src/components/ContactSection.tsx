@@ -11,6 +11,7 @@ const ContactSection = () => {
     name: "",
     email: "",
     company: "",
+    phone: "",
     message: ""
   });
 
@@ -34,6 +35,7 @@ const ContactSection = () => {
       name: "",
       email: "",
       company: "",
+      phone: "",
       message: ""
     });
   };
@@ -124,6 +126,18 @@ const ContactSection = () => {
                     id="company"
                     name="company"
                     value={formData.company}
+                    onChange={handleChange}
+                    className="hover:border-bharatnow-orange focus:border-bharatnow-orange transition-colors duration-300"
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium mb-1">Phone Number</label>
+                  <Input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    value={formData.phone}
                     onChange={handleChange}
                     className="hover:border-bharatnow-orange focus:border-bharatnow-orange transition-colors duration-300"
                   />
