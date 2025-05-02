@@ -8,6 +8,7 @@ import { Mail } from "lucide-react";
 
 const ContactSection = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,24 +22,73 @@ const ContactSection = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
     
-    // Show success message
-    toast({
-      title: "Message sent!",
-      description: "We'll get back to you as soon as possible.",
-    });
-    
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      company: "",
-      phone: "",
-      message: ""
-    });
+    try {
+      console.log("Submitting to HubSpot:", formData);
+      
+      // Create the data in the format HubSpot expects
+      const hubspotData = {
+        fields: [
+          { name: "firstname", value: formData.name },
+          { name: "email", value: formData.email },
+          { name: "company", value: formData.company || "Not provided" },
+          { name: "phone", value: formData.phone || "Not provided" },
+          { name: "message", value: formData.message }
+        ],
+        context: {
+          pageUri: window.location.href,
+          pageName: document.title
+        }
+      };
+      
+      // Replace with your actual HubSpot portal ID and form ID
+      const hubspotPortalId = "YOUR_HUBSPOT_PORTAL_ID";
+      const hubspotFormId = "YOUR_HUBSPOT_FORM_ID";
+      
+      const response = await fetch(
+        `https://api.hsforms.com/submissions/v3/integration/submit/${hubspotPortalId}/${hubspotFormId}`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(hubspotData)
+        }
+      );
+      
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || "Something went wrong");
+      }
+      
+      // Show success message
+      toast({
+        title: "Message sent!",
+        description: "We'll get back to you as soon as possible.",
+      });
+      
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        company: "",
+        phone: "",
+        message: ""
+      });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      
+      toast({
+        title: "Error sending message",
+        description: "Please try again or contact us directly via email.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -162,8 +212,12 @@ const ContactSection = () => {
                   />
                 </div>
                 
-                <Button type="submit" className="w-full bg-bharatnow-orange hover:bg-bharatnow-orange/90 hover:scale-105 transition-all duration-300">
-                  Send Message
+                <Button 
+                  type="submit" 
+                  className="w-full bg-bharatnow-orange hover:bg-bharatnow-orange/90 hover:scale-105 transition-all duration-300"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </Button>
               </form>
             </div>
