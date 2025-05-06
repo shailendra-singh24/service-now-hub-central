@@ -11,6 +11,10 @@ import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
+import ServiceITSM from "./pages/ServiceITSM";
+import ServiceHRSD from "./pages/ServiceHRSD";
+import ServiceCSM from "./pages/ServiceCSM";
+import ServiceCustom from "./pages/ServiceCustom";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +31,11 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
+          {/* Service Detail Pages */}
+          <Route path="/services/itsm" element={<ServiceITSM />} />
+          <Route path="/services/hr" element={<ServiceHRSD />} />
+          <Route path="/services/csm" element={<ServiceCSM />} />
+          <Route path="/services/custom" element={<ServiceCustom />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
