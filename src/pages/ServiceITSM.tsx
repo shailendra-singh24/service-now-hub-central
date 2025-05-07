@@ -13,21 +13,21 @@ const ServiceITSM = () => {
       id: "itsm-overview",
       title: "ITSM Overview",
       description: "An introduction to ServiceNow IT Service Management and how it transforms IT operations.",
-      videoUrl: "https://www.youtube.com/embed/B_Off0-eNZw",
+      videoUrl: "https://www.youtube.com/embed/Zt6GNAIoUsY",
       thumbnail: "/placeholder.svg"
     },
     {
       id: "incident-mgmt",
       title: "Incident Management",
       description: "Learn how ServiceNow helps you quickly resolve IT incidents and minimize business impact.",
-      videoUrl: "https://www.youtube.com/embed/CBh_17IbP_I",
+      videoUrl: "https://www.youtube.com/embed/NC69h4gvqmo",
       thumbnail: "/placeholder.svg"
     },
     {
       id: "service-portal",
       title: "Service Portal Demo",
       description: "See how the ServiceNow Service Portal provides a seamless self-service experience for users.",
-      videoUrl: "https://www.youtube.com/embed/BMiCmfGH_VU",
+      videoUrl: "https://www.youtube.com/embed/X1R7poqJXzo?start=185",
       thumbnail: "/placeholder.svg"
     }
   ];
