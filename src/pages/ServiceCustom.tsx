@@ -12,21 +12,21 @@ const ServiceCustom = () => {
       id: "custom-apps-overview",
       title: "Custom Applications Overview",
       description: "Learn how ServiceNow's App Engine enables rapid development of custom business applications.",
-      videoUrl: "https://www.youtube.com/embed/4K_fNONvvFc",
+      videoUrl: "https://www.youtube.com/embed/hjXxYnVV9kE",
       thumbnail: "/placeholder.svg"
     },
     {
       id: "integration-services",
       title: "Integration Services",
       description: "See how ServiceNow connects with your existing systems and applications for a unified experience.",
-      videoUrl: "https://www.youtube.com/embed/5M-_DZmSJG8",
+      videoUrl: "https://www.youtube.com/embed/B50_-KJnO7A",
       thumbnail: "/placeholder.svg"
     },
     {
       id: "workflow-automation",
       title: "Workflow Automation Demo",
       description: "Experience how ServiceNow's Flow Designer automates complex business processes across departments.",
-      videoUrl: "https://www.youtube.com/embed/ar9W4jgMRV0",
+      videoUrl: "https://www.youtube.com/embed/GJ7ntQ5Qmxs",
       thumbnail: "/placeholder.svg"
     }
   ];

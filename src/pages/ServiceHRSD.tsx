@@ -12,21 +12,21 @@ const ServiceHRSD = () => {
       id: "hrsd-overview",
       title: "HR Service Delivery Overview",
       description: "Learn how ServiceNow HRSD transforms employee experiences from onboarding to retirement.",
-      videoUrl: "https://www.youtube.com/embed/20QUNgFIrK0",
+      videoUrl: "https://www.youtube.com/embed/spAxQ0Yj9es",
       thumbnail: "/placeholder.svg"
     },
     {
       id: "employee-onboarding",
       title: "Employee Onboarding",
       description: "See how ServiceNow streamlines the onboarding process for new employees.",
-      videoUrl: "https://www.youtube.com/embed/HZJQsxsG3Jk",
+      videoUrl: "https://www.youtube.com/embed/XTrNxj8twAc",
       thumbnail: "/placeholder.svg"
     },
     {
       id: "hr-portal-demo",
       title: "HR Service Portal Demo",
       description: "Experience the intuitive HR service portal that simplifies employee self-service.",
-      videoUrl: "https://www.youtube.com/embed/9s_4wpvJfZE",
+      videoUrl: "https://www.youtube.com/embed/Sy_D3FOu1TM",
       thumbnail: "/placeholder.svg"
     }
   ];

@@ -12,21 +12,21 @@ const ServiceCSM = () => {
       id: "csm-overview",
       title: "Customer Service Management Overview",
       description: "Learn how ServiceNow CSM helps organizations deliver exceptional customer service experiences.",
-      videoUrl: "https://www.youtube.com/embed/3dk3hEovYe0",
+      videoUrl: "https://www.youtube.com/embed/3Pu7Am6194A",
       thumbnail: "/placeholder.svg"
     },
     {
       id: "case-management",
       title: "Case Management",
       description: "See how ServiceNow streamlines customer case management and resolution processes.",
-      videoUrl: "https://www.youtube.com/embed/3-cmqDyZPJY",
+      videoUrl: "https://www.youtube.com/embed/23e7cd5U_LU",
       thumbnail: "/placeholder.svg"
     },
     {
       id: "customer-portal-demo",
       title: "Customer Portal Demo",
       description: "Experience the intuitive customer portal that simplifies customer interactions and self-service.",
-      videoUrl: "https://www.youtube.com/embed/E0PnkiILXSs",
+      videoUrl: "https://www.youtube.com/embed/2PG-_7Onfno",
       thumbnail: "/placeholder.svg"
     }
   ];
