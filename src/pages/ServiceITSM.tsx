@@ -27,7 +27,7 @@ const ServiceITSM = () => {
       id: "service-portal",
       title: "Service Portal Demo",
       description: "See how the ServiceNow Service Portal provides a seamless self-service experience for users.",
-      videoUrl: "https://www.youtube.com/embed/SNPGJ-7WAIM",
+      videoUrl: "https://www.youtube.com/embed/BMiCmfGH_VU",
       thumbnail: "/placeholder.svg"
     }
   ];
